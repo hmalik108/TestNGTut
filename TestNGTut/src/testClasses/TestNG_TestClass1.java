@@ -1,41 +1,41 @@
 package testClasses;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.AfterClass;
-
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 
 public class TestNG_TestClass1 {
-  @Test
-  public void testMethod() {
-	  System.out.println("Class 1 -> testMethod");
-  }
-  @BeforeMethod
-  public void beforeMethod() {
-	  System.out.println("Class 1 -> @BeforeMethod");
+    @Test
+    public void testMethod() {
+        System.out.println("Class 1 -> testMethod");
+    }
 
-  }
+    @BeforeMethod
+    public void beforeMethod() {
+        System.out.println("Class 1 -> @BeforeMethod");
 
-  @AfterMethod
-  public void afterMethod() {
-	  System.out.println("Class 1 -> @AfterMethod");
+    }
 
-  }
-  
+    @AfterMethod
+    public void afterMethod() {
+        System.out.println("Class 1 -> @AfterMethod");
 
-  @BeforeClass
-  public void beforeClass() {
-	  System.out.println("Class 1 -> @BeforeClass");
+    }
 
-  }
 
-  @AfterClass
-  public void afterClass() {
-	  System.out.println("Class 1 -> @AfterClass");
+    @BeforeClass
+    public void beforeClass() {
+        System.out.println("Class 1 -> @BeforeClass");
 
-  }
+    }
+
+    @AfterClass
+    public void afterClass() {
+        System.out.println("Class 1 -> @AfterClass");
+
+    }
 
 }
